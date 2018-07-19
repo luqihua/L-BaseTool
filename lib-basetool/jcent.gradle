@@ -1,0 +1,14 @@
+apply plugin: 'com.novoda.bintray-release'
+publish {
+    repoName = 'maven'//远程仓库名字,不指明，默认是上传到maven
+    userOrg = 'qihua'//bintray.com的用户名
+    groupId = 'com.lu'//jcenter上的路径
+    artifactId = 'lib-basetool'//项目名称
+    publishVersion = '0.0.1'//版本号
+    desc = 'a library for android basetool'//描述
+    website = "https://github.com/luqihua/libRxHttp.git"//github 地址
+}
+
+//./gradlew clean build bintrayUpload -PbintrayUser=qihua -PbintrayKey=dde6636376de543623a5238486c99ad5e9c228e4 -PdryRun=false
+
+

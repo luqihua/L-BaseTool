@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.meituan.android.walle:payload_reader:1.1.5@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.meituan.android.walle/payload_reader/1.1.5/137bcd6d91bb37deb24ecd0366cb4c8493ce7d52/payload_reader-1.1.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.meituan.android.walle/payload_reader/1.1.5/236b28de7e00af0d3fc723a80bc1b8987d5cb3a9/payload_reader-1.1.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

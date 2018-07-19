@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.meituan.android.walle:library-1.1.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.1.5.aar/a49285038ce586d54846d724c63b9796/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.1.5.aar/a49285038ce586d54846d724c63b9796/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.meituan.android.walle/library/1.1.5/a2a968d1fee7bd83278229ee81625c8fa2596adf/library-1.1.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
