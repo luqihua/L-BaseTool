@@ -42,7 +42,7 @@ public class BaseTitleBar extends FrameLayout {
     private final static int DEFAULT_BOTTOM_LINE_HEIGHT = 1;//默认底部横线高度
 
     private Context mContext;
-    private int mHeight = DEFAULT_HEIGHT;
+    private int mHeight ;
     //中间模块
     protected TextView mTitleView;
     protected String mTitle = DEFAULT_TITLE;
