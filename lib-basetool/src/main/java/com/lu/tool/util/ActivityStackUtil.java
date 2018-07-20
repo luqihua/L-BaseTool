@@ -84,14 +84,22 @@ public class ActivityStackUtil implements Application.ActivityLifecycleCallbacks
         return preActivity;
     }
 
+    /**
+     * 关闭指定的activity
+     *
+     * @param activityClass
+     */
     public void closeActivity(Class<Activity> activityClass) {
         for (Activity activity : mActivityStack) {
-            if (activity.getClass()==activityClass){
+            if (activity.getClass() == activityClass) {
                 activity.finish();
             }
         }
     }
 
+    /**
+     * 关闭整个app
+     */
     public void closeApp() {
         while (mActivityStack.size() > 0) {
             mActivityStack.pop().finish();

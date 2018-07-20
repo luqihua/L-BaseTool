@@ -35,10 +35,6 @@ public class CloseableActivity extends AppCompatActivity {
         ActivityStackUtil.getInstance().closeApp();
     }
 
-    public static void closeActivity(Class<?> activityClass){
-
-    }
-
     protected void onKeyBack() {
         finish();
     }
