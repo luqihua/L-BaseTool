@@ -5,20 +5,33 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 
 import com.lu.tool.util.ActivityStackUtil;
+import com.lu.tool.widget.SlideBackLayout;
 
 /**
  * 基础activity
  */
-public class CloseableActivity extends AppCompatActivity {
+public class LBaseActivity extends RxLifeActivity {
 
-    protected CloseableActivity mCurrentActivity;
+    protected LBaseActivity mCurrentActivity;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        if (isSupportSlideBack()) {
+            new SlideBackLayout(this).attach2Activity(this, null);
+        }
         super.onCreate(savedInstanceState);
         mCurrentActivity = this;
     }
 
+    /**
+     * 是否支持滑动返回
+     *
+     * @return
+     */
+    protected boolean isSupportSlideBack() {
+        return false;
+    }
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
@@ -30,11 +43,10 @@ public class CloseableActivity extends AppCompatActivity {
         return super.onKeyDown(keyCode, event);
     }
 
-    //关闭整个app
-    public static void closeApp() {
-        ActivityStackUtil.getInstance().closeApp();
-    }
 
+    /**
+     * 返回键
+     */
     protected void onKeyBack() {
         finish();
     }

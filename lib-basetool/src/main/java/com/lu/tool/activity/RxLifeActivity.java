@@ -2,6 +2,7 @@ package com.lu.tool.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 
 import com.lu.tool.http.BaseHttpTransformer;
 import com.lu.tool.http.HttpResult;
@@ -19,7 +20,7 @@ import io.reactivex.subjects.BehaviorSubject;
  * Description: RxLifeActivity
  */
 
-public abstract class RxLifeActivity extends CloseableActivity implements BaseView {
+public abstract class RxLifeActivity   extends AppCompatActivity implements BaseView {
 
     private BehaviorSubject<RxLifecycle> lifecycleSubject = BehaviorSubject.create();
 
